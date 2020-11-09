@@ -1,0 +1,63 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%                                                                 %
+%                            CHAPTER                              %
+%                                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\chapter{Research and Investigation}
+\section{Introduction}
+This chapter serves as an explanation on certain choices that are made.
+A chapter like this is in my opinion justified because of a few reasons.
+Doing research is not just answering a question, there is a complete process in which a lot of choices have to be made,
+and in certain moments, choices need to be revisit. 
+Often more than one wrong choice is made but making that wrong choice still contributes to the final result.
+In the next sections I will describe my process throughout the past year.
+\section{Timeline}
+\subsection{Initial Research}
+My starting knowledge in the field of machine learning was close to zero.
+Therefore the initial research phases consisted mainly of studying the basics of machine learning and different kinds of implementations.
+With the basic knowledge built up, I started with the LS-SVM algorithm itself and playing around with the toolbox.
+\subsection{Parallel Execution Research}
+I started with the idea of running Matlab server on a remote machine and try to make it work.
+In my mind this was very useful because the end goal for me at that point was executing parallel code on a remote machine.
+However in this process, I had a lot of difficulties with getting the Matlab server to run and to execute code.
+\par 
+Because it was harder than expected, I started exploring other options.
+I knew that a lot of heavy computations were matrix computations.
+Matlab is very optimized in matrix computations but not so much in memory management.
+The algorithm requires a lot of passing around matrices from one function to another.
+If there is one computer language that is perfect for controlling memory and making sure nothing is copied when you don't want to, it is C++.
+As a benefit frameworks like OpenMP exist for CPU parallel execution and intelMKL and others for optimized matrix operations on the CPU.
+By combining these facts I made the decision to translate the needed functions from Matlab to C++, and to start the development of a C++ FS LS-SVM library.
+\subsection{Development}
+In the first phase I started with using the Matlab coder toolbox to translate the existing Matlab scripts in the LS-SVM toolbox to c-code.
+I quickly found out that:
+\begin{enumerate}
+	\item Most scripts needed a lot of alterations because the optimized fixed size least square support vector algorithm was not or barely not implemented in the toolbox.
+	\item In order to make use of the OpenMp toolbox everything had to be rewritten.
+\end{enumerate} 
+Manual translation seemed a better option.
+I completely separated all the linear algebra from the algorithm in two different libraries.
+With the logic that my personal linear algebraic library would be a bridge between an existing optimised framework like intelMKL and the LS-SVM library.
+I followed an introduction course to OpenMP at the ICTS center of the KULeuven to get a good start.
+OpenMP is, in my opinion, a very good framework that easily gives you a lot of control over parallel threads and making scalability very easy without a lot of environment specifics.
+The LS SVM C++ library was quiet easy to develop but the integration with linear algebraic libraries was much more difficult than expected.
+Big problems arose with compatibility of the compiler, the use of OpenMp together with the other frameworks and more.
+\par 
+The compiler settings, paths and cmake files were becoming so environment specific that porting the software from my local machine to a remote machine were becoming impossible.
+That together with the fact that without a working optimized linear algebraic framework, it would not be competitive to Matlab execution.
+Even with better memory management.
+\par 
+Those problems forced me to drop all the C++ code and return to Matlab.
+The remaining problem: remote execution of the code.
+Fortunately, Matlab offers remote execution together with commercial partners in a way that is independent from any environment variables. 
+I started adjusting all the needed scripts to optimized FS LS-SVM and creating working models.
+\section{Personal Note}
+I am aware that this is an odd chapter in a thesis. 
+However, for me it is an important one. 
+I worked for almost nine months on the C++ library before throwing it all away, meaning that my actual development process was mostly done there and not in the used Matlab code.
+This is ofcourse not a waste, I learned C++ programming in a professional way and I am comfortable to say that my knowledge of the OpenMP framework, as well as linear algebraic frameworks as intelMKL, is more than decent.
+The biggest downside is that I have investigated less than I hoped to. 
+As you will see, there are some very interesting future extensions described in chapter 7 that I actually was hoping to investigate myself.
+If there is any interest in my C++ code, I am always willing to open the repositories.
+
+

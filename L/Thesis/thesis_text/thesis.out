@@ -1,0 +1,81 @@
+\BOOKMARK [0][-]{chapter*.6}{List of Symbols}{}% 1
+\BOOKMARK [0][-]{chapter*.7}{List of Abbreviations}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
+\BOOKMARK [1][-]{section.1.1}{History and Scope}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Objectives}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{Outline}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Machine Learning}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.1}{Introduction}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.2}{Classification}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.3}{Regression}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.4}{Bias-Variance Trade Off}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.5}{Cross Validation}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.6}{Support Vector Machines \(SVMs\)}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.7}{Conclusion}{section.2.2}% 16
+\BOOKMARK [1][-]{section.2.3}{Optimization: Simulated Annealing and Coupled Simulated Annealing}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.3.1}{Introduction}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.2}{Simulated Annealing}{section.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.3.3}{Coupled Simulated Annealing}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.4}{Conclusion}{section.2.3}% 21
+\BOOKMARK [1][-]{section.2.4}{Least-Square Support Vector Machines \(LS-SVM\)}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.4.1}{Introduction}{section.2.4}% 23
+\BOOKMARK [2][-]{subsection.2.4.2}{Differences and Solving}{section.2.4}% 24
+\BOOKMARK [2][-]{subsection.2.4.3}{Parameter optimization}{section.2.4}% 25
+\BOOKMARK [2][-]{subsection.2.4.4}{Conclusion}{section.2.4}% 26
+\BOOKMARK [1][-]{section.2.5}{Fixed Size Least Square Support Vector Machines \(FS LS-SVM\)}{chapter.2}% 27
+\BOOKMARK [2][-]{subsection.2.5.1}{Introduction}{section.2.5}% 28
+\BOOKMARK [2][-]{subsection.2.5.2}{Mathematical Background and Algorithm}{section.2.5}% 29
+\BOOKMARK [2][-]{subsection.2.5.3}{Conclusion}{section.2.5}% 30
+\BOOKMARK [1][-]{section.2.6}{Parallel computing}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.6.1}{Introduction}{section.2.6}% 32
+\BOOKMARK [2][-]{subsection.2.6.2}{SIMD and The World of CUDA}{section.2.6}% 33
+\BOOKMARK [2][-]{subsection.2.6.3}{MIMD: Multiprocessor parallel computing }{section.2.6}% 34
+\BOOKMARK [2][-]{subsection.2.6.4}{OpenMP}{section.2.6}% 35
+\BOOKMARK [2][-]{subsection.2.6.5}{Conclusion}{section.2.6}% 36
+\BOOKMARK [1][-]{section.2.7}{Matlab with Parallelism}{chapter.2}% 37
+\BOOKMARK [2][-]{subsection.2.7.1}{Introduction}{section.2.7}% 38
+\BOOKMARK [2][-]{subsection.2.7.2}{GPU and CPU parallellism}{section.2.7}% 39
+\BOOKMARK [2][-]{subsection.2.7.3}{Memory management}{section.2.7}% 40
+\BOOKMARK [2][-]{subsection.2.7.4}{HPC}{section.2.7}% 41
+\BOOKMARK [2][-]{subsection.2.7.5}{Conclusion}{section.2.7}% 42
+\BOOKMARK [1][-]{section.2.8}{Conclusion}{chapter.2}% 43
+\BOOKMARK [0][-]{chapter.3}{Research and Investigation}{}% 44
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 45
+\BOOKMARK [1][-]{section.3.2}{Timeline}{chapter.3}% 46
+\BOOKMARK [2][-]{subsection.3.2.1}{Initial Research}{section.3.2}% 47
+\BOOKMARK [2][-]{subsection.3.2.2}{Parallel Execution Research}{section.3.2}% 48
+\BOOKMARK [2][-]{subsection.3.2.3}{Development}{section.3.2}% 49
+\BOOKMARK [1][-]{section.3.3}{Personal Note}{chapter.3}% 50
+\BOOKMARK [0][-]{chapter.4}{FS LS-SVM: Analysis of the Algorithm}{}% 51
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 52
+\BOOKMARK [1][-]{section.4.2}{Performance measures}{chapter.4}% 53
+\BOOKMARK [1][-]{section.4.3}{Interesting Elements}{chapter.4}% 54
+\BOOKMARK [2][-]{subsection.4.3.1}{SV Selection}{section.4.3}% 55
+\BOOKMARK [2][-]{subsection.4.3.2}{Kernels}{section.4.3}% 56
+\BOOKMARK [2][-]{subsection.4.3.3}{Coupled Simulating Annealing}{section.4.3}% 57
+\BOOKMARK [2][-]{subsection.4.3.4}{Simplex}{section.4.3}% 58
+\BOOKMARK [2][-]{subsection.4.3.5}{Crossvalidation}{section.4.3}% 59
+\BOOKMARK [1][-]{section.4.4}{Conclusion}{chapter.4}% 60
+\BOOKMARK [0][-]{chapter.5}{Parallel Fixed Size Least Square Support Vector Machines in Action }{}% 61
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.2}{What To Test}{chapter.5}% 63
+\BOOKMARK [2][-]{subsection.5.2.1}{Sequential}{section.5.2}% 64
+\BOOKMARK [2][-]{subsection.5.2.2}{Parallel}{section.5.2}% 65
+\BOOKMARK [1][-]{section.5.3}{What To Measure}{chapter.5}% 66
+\BOOKMARK [1][-]{section.5.4}{Hypothesis}{chapter.5}% 67
+\BOOKMARK [1][-]{section.5.5}{Test Results}{chapter.5}% 68
+\BOOKMARK [2][-]{subsection.5.5.1}{Problems}{section.5.5}% 69
+\BOOKMARK [2][-]{subsection.5.5.2}{Results After Alteration}{section.5.5}% 70
+\BOOKMARK [1][-]{section.5.6}{Conclusion}{chapter.5}% 71
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 72
+\BOOKMARK [0][-]{chapter.7}{Future Extensions}{}% 73
+\BOOKMARK [1][-]{section.7.1}{List of possible future extensions}{chapter.7}% 74
+\BOOKMARK [1][-]{section.7.2}{Conclusion}{chapter.7}% 75
+\BOOKMARK [0][-]{appendix.A}{Overview Appendices}{}% 76
+\BOOKMARK [0][-]{appendix.B}{Characteristics of the cloud service HPC used}{}% 77
+\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 78
+\BOOKMARK [1][-]{section.B.2}{Characteristics and performance}{appendix.B}% 79
+\BOOKMARK [0][-]{appendix.C}{GPU computing in Matlab}{}% 80
+\BOOKMARK [1][-]{section.C.1}{Basic GPU usage}{appendix.C}% 81

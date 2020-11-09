@@ -1,0 +1,18 @@
+\chapter{GPU computing in Matlab}
+\section{Basic GPU usage}
+The functions 'gpuArray()' and 'gather()':
+\begin{algorithm}
+	\fbox{\begin{minipage}{\linewidth}
+		$>>$A = gpuArray(B) \% Matrix B is copied to the GPU dedicated memory, giving it name A.\\
+		$>>$B = gather(A)   \% Matrix A is copied to the CPU memory, giving it name B.\\
+	\end{minipage}}
+\end{algorithm}
+Functions to create special kind of matrices can be used with the tag 'gpuArray' to directly create them on the GPU dedicated memory.
+Special matrix create function are: ones(), zeros(), rand(),eye(),...
+\begin{algorithm}
+	\fbox{\begin{minipage}{\linewidth}
+			$>>$A = ones(10,5,'gpuArray')  \\
+			$>>$A = eye(10,5,'gpuArray') \% eye() creates an identity matrix.\\
+			$>>$clear A; to free up when matrix A is no longer needed in GPU dedicated memory.\\
+	\end{minipage}}
+\end{algorithm}

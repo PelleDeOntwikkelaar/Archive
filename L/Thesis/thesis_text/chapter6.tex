@@ -1,0 +1,59 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%                                                                 %
+%                            CHAPTER                              %
+%                                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\chapter{Conclusion}
+When making the literature review it stood out that the amount of matrix operation used in Machine Learning algorithms in general and Support Vector Machines algorithms specific, makes it a very suitable candidates for GPU parallel execution.\par 
+Secondly it also stood out that the different ways to accomplish parallel execution provided us with multiple options to work with.
+When diving into the LS-SVM algorithm, the Fixed Size LS-SVM algorithm and the later optimized FS LS-SVM algorithm, it became quiet clear that large matrix operations are together with a correct search of the Support Vectors set are the main bottleneck of the algorithm.\par
+A detailed analysis of the algorithm provided us with all the elements that are suitable candidates for parallelization in any form.
+\par
+After seeing more benefits in full control over multiple CPU threads and memory management, I made the initial choice to work in C++.
+However the fact that in CPU multi threading the results were very promising and the personally made coding libraries were working fine, the connection between the multi threading and vectorization framework not only proved to be too hard, it also proved to be too environment specific.
+Therefore the decision was made to return to Matlab and use the parallel computing toolbox.
+The sacrifices of full control in threads and memory were made for the more high level usage of Matlab scripting language with a better chance of accomplishing working models.
+\par
+With returning to Matlab and constructing my personal Matlab scripts for the FS LS-SVM algorithm, based on the existing LS-SVM toolbox, and literature provided to me about the FS LS-SVM and optimized FS LS-SVM algorithm.
+After testing this algorithm provided me with realistic results proving that it worked.
+With the completion of a working yet still sequential model, the pre-objectives of my thesis were met.
+I was in possession of thoroughly literature review, algorithm analysis and a working sequential model.
+\par 
+Considering the testing hypothesis I did not predict a speed-up factor because of multiple hard to calculate or quantify factors.
+What I did do is predict phenomena based on literature knowledge about the working of GPU usage and Matlab memory management.
+As expected a tipping point exist from when the performance of GPU parallel code exceeds the non GPU parallel code.
+As also expected, the advantage of large data sets is bigger compared to small data sets, even over the same amount of Support Vectors used.
+When looking at the large data set we notice a speed-up factor of more than 10.
+A large speed-up factor was expected but with the knowledge I have right now, I would like to make some remarks.
+Speed-up factor is the ideal term because it only talks about the difference in execution time.
+This is ideal because it only gives us information about the time. 
+As described in the hypothesis section of the previous chapter a lot of factors are involved were some are hard to quantify.
+The biggest example is memory management: because most of the matrix computations happen inside the crossvalisation, most matrices are not copied back to the main memory.
+This gives a significant difference, it results in the fact that all those large matrix files (worst case size $n$x$m$ or vice versa) do not exist in main memory.
+When working with large data sets it results in the fact that Matlab is going to need less main memory swaps, reducing the CPU main memory management.
+This phenomenon does not have anything to do with parallel execution therefor in my opinion speed-up factor is an ideal term, not too narrow connected to parallel execution alone.
+\par 
+The tests of the large data set are situated in an ideal spot: the matrices are large enough to take full advantage of the GPU capabilities but at the same time all the matrices used in the crossvalidation can coexist in the dedicated GPU memory.
+If the data set and or the number of support vector gets larger, intermediate memory management is needed in the \textit{fast $v$ fold crossvalidation} algorithm introducing extra overhead time.
+As described in the literature review, Matlab does not take care of memory management on the GPU, this needs to be implemented in the algorithm itself.
+\par 
+As shown in the test results, small data sets and or working with a small number of support vectors does not provide a reduce in execution time.
+The conclusion can be made that however the HPC GPU provides a big performance benefit, not all cases can fully benefit from it.
+When thinking about training models on such a high performance machine the alteration should always be made if it provides a benefit.
+\par  
+The alterations in the tests needed to be able to get a valid result were not part of my plan.
+The fact that CPU thread control is harder in Matlab and that it is not that transparent was one of the original reasons that I chose to implement the algorithm in C++.
+When returning to Matlab implementation this was the biggest trade off made.
+However I do think this is possible but a complete rewrite of the variable structure in the algorithm is needed and dedicated GPUs for every worker\footnote{worker in Matlab has the same functionality as a thread.} would be ideal.\footnote{I am not aware if it possible to dedicate a single GPU to a single worker in the Matlab scripting language}
+\par 
+With the development of a parallel FS LS-SVM algorithm, the testing on a HPC device and the use of a data set of more than 500000 data points and more than 50 attributes, most of the objectives are met. 
+However the implementation of binary classification has not been, with the switch back from C++ to Matlab I did not have the time to complete the binary classification parallel implementation and testing. 
+This is a petty because if I made the switch earlier I am sure I would have some interesting results as well.
+With more time I would have rewritten the cross validation in order to make it Matlab CPUparallel proof and/or I would have tried to find different HPC testing setups.
+But it is what it is, most of the stated objectives are met and in my opinion with very intersting results.
+In the next chapter some possible extensions are listed.
+
+ 
+
+

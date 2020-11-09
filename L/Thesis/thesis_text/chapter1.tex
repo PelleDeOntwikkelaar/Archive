@@ -1,0 +1,57 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%                                                                 %
+%                            CHAPTER                              %
+%                                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\chapter{Introduction}
+\section{History and Scope}
+The rise of machine learning is unmistakable connected to the development of other scientific branches.
+First of is the development of computer systems.  
+Designing computer systems originated out of the need to do more and more difficult calculations, most desirable with a far larger speed than the human brain ever could.
+A pioneer definitely worth mentioning is Alan Turing who built the enigma machine in the 1940's.
+Enigma was the name of the code that the Germans used to encrypt their transmissions in the second world war.
+His enigma machine is often referred to as one of the first real computers, it was designed and used to crack this German enigma code.
+\par
+In a parallel timeline Donald Hebb is responsible for creating an abstract model of a brain cell, or neuron.\cite{HebbDonaldOlding1949Wiley}
+In his book D. Hebb explains the functioning of a neuron and translates this to more abstract models complete with mathematical representations.
+\par 
+In the 1950s Arthur Samuel developed a computer program to play checkers with as an objective calculate the move that gives the best winning opportunities.\cite{McCarthy_Feigenbaum_1990} 
+In this program Samuel pioneered concepts that stick around to this day.
+The fact that computer systems at the time do not have a lot of memory available, forced A. Samuel to invent a, later to be, very important algorithm: \textit{alpha-beta pruning}.
+In \textit{alpha-beta pruning} every situation on a board is called a state.
+The algorithm makes decisions based on scores it presents to every state, those scores are calculated based on winning probability. 
+By sorting possible states in three form, and not analysing branches of the threes that are never going to be possible.
+This algorithm is good in generating the best possible move with having a competitive memory and computational complexity.
+\par 
+All those developments throughout the first half of the 20th century, together with the rise of optimization, heuristics, meta-heuristics and early concepts of Artificial Intelligence, created a fertile environment for the birth of real \textit{Machine Learning} algorithms and principles.
+\par
+Nowadays, a variety of \textit{Machine Learning} algorithms are available, dividable into different categories.
+Regression, Instance-based, Regularization, SVMs, Decision Tree, Bayesian, Clustering, Association Rule Learning, Artificial Neural Network, Deep Learning, Dimensionality Reduction, etc.
+A common characteristic of the algorithms throughout the different categories is the computational need, mostly in the form of vector and matrix transformations/calculations.
+This explains the rising popularity as computational power in computer systems grew.
+\par 
+In recent years and decades parallel computing became more accessible thanks to a number of tools and languages that provide better support for developers who have the need to write their programs for parallel execution.
+On the hardware side we see the following facts:  most to all of modern CPU's support multi threading and the development of CUDA by NVIDIA, which made it much more accessible to directly use the GPU, and also the more common availability of clusters and supercomputers.
+The combination of those elements together with the need to a large number of linear algebraic computations,
+create an environment where parallelization is very attractive.
+\section{Objectives}
+The main objective of this research is to study the behaviour of the FS LS-SVM algorithm in High Performance Computing environments. 
+More into detail the following objectives can be stated related to the complete research project:
+\begin{itemize}
+	\item To make a study of the Fixed Size Least Square Support Vector Machines algorithm.
+	\item To get a general understanding of all the elements of the Fixed Size Least Square Support Vector Machines algorithm.
+	\item To make a study of the possibilities for parallel programming and code execution as well as HPC environments.
+	\item To construct an analysis to predict which parts of the FS LS-SVM are good candidates for parallel execution.
+	\item To construct a model in a programming language capable of both sequential and parallel execution, while making remote execution on an HPC environment possible.
+	\item To construct tests to describe the behaviour of the model.
+	\item To test the algorithm for function estimation and binary classification with data sets containing at least 500 000 data points and 50 attributes.
+\end{itemize}
+\section{Outline}
+In chapter 2, an extensive literature review is given. 
+Covering the background of all the elements used in this research, starting with Machine Learning and narrowing down to Support Vector machines, Least Square Support Vector Machines and Fixed Size Least Square Support Vector Machines. After that jumping out of the machine learning and into the world of computing, parallel computing and High Performance Computing.\\
+Chapter 3 is a description of the research process, this is in my opinion necessary because it helps to justify why certain decisions are taken in the process.\\
+Chapter 4 is a detailed analysis of all the elements of the FS LS-SVM algorithm and their capability to be executed in parallel.\\
+Chapter 5 describes the test that are done. For every test, a detailed description is given as well as an hypothesis and result reflection.\\
+In chapter 6, a general conclusion corresponding to the tests and the research is formulated.\\
+A look at the future and ideas of follow up research are described in chapter 7.

@@ -1,0 +1,194 @@
+\begin{thebibliography}{10}
+
+\bibitem{Suykens2002}
+J.~AK~Suykens, T.~Van~Gestel, J.~De~Brabanter, B.~De~Moor, and J.~Vandewalle.
+\newblock {\em Least Square Support Vector Machines}.
+\newblock 2002.
+
+\bibitem{AmazonWe74:online}
+Amazon.
+\newblock Amazon web services (aws) - cloud computing services.
+\newblock \url{https://aws.amazon.com/}, 2020.
+\newblock (Accessed on 08/06/2020).
+
+\bibitem{ThreadFo70:online}
+Apple.
+\newblock Thread foundation apple developer documentation.
+\newblock \url{https://developer.apple.com/documentation/foundation/thread},
+  2020.
+\newblock (Accessed on 04/14/2020).
+
+\bibitem{UCIMachi66:online}
+T.~Bertin-Mahieux.
+\newblock Uci machine learning repository: Concrete compressive strength data
+  set.
+\newblock
+  \url{http://archive.ics.uci.edu/ml/datasets/Concrete+Compressive+Strength}.
+\newblock (Accessed on 08/14/2020).
+
+\bibitem{Optimized2010:article}
+K.~Brabanter, J.~De~Brabanter, J.~Suykens, and B.~De~Moor.
+\newblock Optimized fixed-size kernel models for large data sets.
+\newblock {\em Computational Statistics And Data Analysis}, 2010.
+
+\bibitem{Brabazon2015}
+A.~Brabazon, M.~O. Neill, and S.~McGarraghy.
+\newblock {\em Natural Computing Algorithms}.
+\newblock Springer Berlin Heidelberg, 2015.
+
+\bibitem{MachLearnEncy2017Spring}
+G.~I.~W. Claude~Sammut.
+\newblock {\em Encyclopedia of Machine Learning and Data Mining}.
+\newblock Springer, Boston, MA, Boston, MA, 2017.
+
+\bibitem{Threadsu13:online}
+cppreference.
+\newblock Thread support library cppreference.com.
+\newblock \url{https://en.cppreference.com/w/c/thread}, 2018.
+\newblock (Accessed on 04/14/2020).
+
+\bibitem{Threadsu16:online}
+cppreference.
+\newblock Thread support library cppreference.com.
+\newblock \url{https://en.cppreference.com/w/cpp/thread}, 2020.
+\newblock (Accessed on 04/14/2020).
+
+\bibitem{FlachPeter2012MLTA}
+P.~Flach.
+\newblock {\em Machine Learning: The Art and Science of Algorithms that Make
+  Sense of Data}.
+\newblock Cambridge university press, Cambridge, 2012.
+
+\bibitem{HebbDonaldOlding1949Wiley}
+D.~O. Hebb.
+\newblock {\em The organization of behavior: a neuropsychological theory}.
+\newblock JOHN WILEY if SONS, Inc., McGill Univentgli, 1949.
+
+\bibitem{Threadin70:online}
+Intel.
+\newblock Threading fortran applications for parallel performance on multi-core
+  systems | intel® software.
+\newblock
+  \url{https://software.intel.com/en-us/articles/threading-fortran-applications-for-parallel-performance-on-multi-core-systems},
+  2018.
+\newblock (Accessed on 04/14/2020).
+
+\bibitem{threadKo75:online}
+JetBrains.
+\newblock thread kotlin programming language.
+\newblock
+  \url{https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.concurrent/thread.html},
+  2019.
+\newblock (Accessed on 04/14/2020).
+
+\bibitem{MATLABDe46:online}
+Mathworks.
+\newblock Matlab deep learning container on nvidia gpu cloud for amazon web
+  services - matlab \& simulink - mathworks benelux.
+\newblock
+  \url{https://nl.mathworks.com/help/cloudcenter/ug/matlab-deep-learning-container-on-aws.html}.
+\newblock (Accessed on 08/28/2020).
+
+\bibitem{MATLABGP8:online}
+Mathworks.
+\newblock Matlab gpu computing support for nvidia cuda enabled gpus - matlab \&
+  simulink.
+\newblock \url{https://nl.mathworks.com/solutions/gpu-computing.html}, 2020.
+\newblock (Accessed on 08/06/2020).
+
+\bibitem{MATLABin13:online}
+Mathworks.
+\newblock Matlab in the cloud - matlab \& simulink.
+\newblock \url{https://nl.mathworks.com/solutions/cloud.html#public-cloud},
+  2020.
+\newblock (Accessed on 08/06/2020).
+
+\bibitem{Parallel63:online}
+Mathworks.
+\newblock Parallel computing toolbox - matlab.
+\newblock
+  \url{https://nl.mathworks.com/products/parallel-computing.html#scale-up-matlab-applications},
+  2020.
+\newblock (Accessed on 08/06/2020).
+
+\bibitem{McCarthy_Feigenbaum_1990}
+J.~McCarthy and E.~A. Feigenbaum.
+\newblock In memoriam: Arthur samuel: Pioneer in machine learning.
+\newblock {\em AI Magazine}, 11(3):10, Sep. 1990.
+
+\bibitem{CloudCom84:online}
+Microsoft.
+\newblock Cloud computing services | microsoft azure.
+\newblock \url{https://azure.microsoft.com/nl-nl/}, 2020.
+\newblock (Accessed on 08/06/2020).
+
+\bibitem{ThreadCl82:online}
+Microsoft.
+\newblock Thread class (system.threading) microsoft docs.
+\newblock
+  \url{https://docs.microsoft.com/en-us/dotnet/api/system.threading.thread?view=netframework-4.8},
+  2020.
+\newblock (Accessed on 04/14/2020).
+
+\bibitem{NVIDIAV181:online}
+NVIDIA.
+\newblock Nvidia v100s datasheet.
+\newblock
+  \url{https://images.nvidia.com/content/technologies/volta/pdf/volta-v100-datasheet-update-us-1165301-r5.pdf}.
+\newblock (Accessed on 08/28/2020).
+
+\bibitem{MATLABNV63:online}
+NVidia.
+\newblock Matlab | nvidia ngc.
+\newblock \url{https://ngc.nvidia.com/catalog/containers/partners:matlab},
+  2020.
+\newblock (Accessed on 08/06/2020).
+
+\bibitem{Defining44:online}
+Oracle.
+\newblock Defining and starting a thread.
+\newblock
+  \url{https://docs.oracle.com/javase/tutorial/essential/concurrency/runthread.html},
+  2019.
+\newblock (Accessed on 04/14/2020).
+
+\bibitem{threadin24:online}
+python.org.
+\newblock threading thread-based parallelism python 3.8.2 documentation.
+\newblock \url{https://docs.python.org/3/library/threading.html}, 2020.
+\newblock (Accessed on 04/14/2020).
+
+\bibitem{rupp_2015}
+K.~Rupp and K.~Rupp, Jun 2015.
+
+\bibitem{stallings2015operating}
+W.~Stallings.
+\newblock {\em Operating systems : internals and design principles}.
+\newblock Pearson Education Limited, Harlow, Essex, England, eight edition,
+  global edition, 2015.
+
+\bibitem{stallings2016computer}
+W.~Stallings.
+\newblock {\em Computer organization and architecture : designing for
+  performance}.
+\newblock Pearson-Prentice Hall, Boston, tenth edition, global edition, 2016.
+
+\bibitem{CoLoMi2002}
+J.~Suykens, J.~Vandewalle, and B.~De~Moor.
+\newblock Intelligence and cooperative search by coupled local minimizers.
+\newblock 11 2002.
+
+\bibitem{csa2007}
+S.~Xavier-de Souza, J.~Suykens, J.~Vandewalle, and D.~Bolle.
+\newblock Coupled simulated annealing.
+\newblock {\em IEEE transactions on systems, man, and cybernetics. Part B,
+  Cybernetics : a publication of the IEEE Systems, Man, and Cybernetics
+  Society}, 40:320--35, 08 2009.
+
+\bibitem{UCIMachi93:online}
+P.~I.-C. Yeh.
+\newblock Uci machine learning repository: Yearpredictionmsd data set.
+\newblock \url{https://archive.ics.uci.edu/ml/datasets/YearPredictionMSD}.
+\newblock (Accessed on 08/28/2020).
+
+\end{thebibliography}

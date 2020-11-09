@@ -1,0 +1,23 @@
+In machine learning a subset of algorithms exist that use support vectors.
+Those so called Support Vector Machines(SVM) use a partial of the available data points as support vectors to achieve a function estimation or classification border.
+The SVM principles are taken by Suykens et. al and combined with the kernel principle, parameter optimization methods as coupled simulated annealing and simplex into a machine learning algorithm called Least Square - SVM.
+\par 
+The downside of this implementation is that all vectors are used as support vectors, to complement this, an alteration was developed called Fixed Size Support Vector Machine.
+The objective of this research is the measurement of the performance of the optimized and parallelized FS LS-SVM algorithm when executed on a High Performance Computing machine.
+In this document a detailed analysis is given of the algorithm with background information about every step.
+A second detailed analysis is given to describe the possible parallel execution of every step of this algorithm. 
+Both the sequential and parallel model are created, described and tested.
+\par 
+The different test scenarios are tested on an Amazon Cloud Service Instance: MATLAB Deep Learning Container on NVIDIA GPU Cloud, making use of the Intel Xeon E5 CPU and the NVIDIA TESLA V100 GPU. 
+We expected the following:
+Performance decrease for small data sets with a small number of support vectors when executing in parallel.
+Performance increase for large data sets with both a small and large number of support vectors.
+The results showed that even small data sets can benefit from parallel execution with a speed-up factor up to 1.4 for large amount of support vectors.
+Large data sets show speedup factors up to 19. 
+With this impressive number come some remarks.
+\par 
+This speed-up factor is located in an ideal region where GPU memory management is not yet necessary, and the overhead of CPU memory management is not present. 
+However, the results show that with good memory management the speed-up factor of parallel execution of the FS LS-SVM algorithm for big data sets can be above 10.
+
+
+\textbf{Keywords}: Machine Learning, Support Vector Machines, Matlab, Parallel Computing, HPC. 
